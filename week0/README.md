@@ -25,8 +25,10 @@ What is the difference between react and react Native?
 
 
 	Brief description of my Understandings : 
-    
-React is JS popular framework that is used for building responsive UI components. In react every thing is treated as a separate block like a building block. It is very responsive to changes like if there is any changes occure in DOM, it compare the actual DOM with virtual DOM and reflect the changes in actual DOM. So only that component is update where changes occures. 
-React native is JS framework that is used for building native applications. “Learn once, Develop everywhere” 
-This is framework is used to build application for cross platforms like IOS, windows, android mobile phones. 
+       React is JS popular framework that is used for building responsive UI components. In react every thing is treated
+       as a separate block like a building block. It is very responsive to changes like if there is any changes occure in DOM,
+       it compare the actual DOM with virtual DOM and reflect the changes in actual DOM. So only that component is update where 
+       changes occures. 
+       React native is JS framework that is used for building native applications. “Learn once, Develop everywhere” 
+       This is framework is used to build application for cross platforms like IOS, windows, android mobile phones. 
 
