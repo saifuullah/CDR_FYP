@@ -25,8 +25,7 @@ While React Native styling has a similar syntax to CSS, it does not use HTML or 
 
 <h1> References </h1>
 <h6> History </h6>
-      * https://en.wikipedia.org/wiki/React_(JavaScript_library)
-      
+      * https://en.wikipedia.org/wiki/React_(JavaScript_library)  <br />
       * https://en.wikipedia.org/wiki/React_Native
 
 <h6> What is React Native? </h6>
