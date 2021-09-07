@@ -1,0 +1,147 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{% static '/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/vendor/perfect-scrollbar/perfect-scrollbar.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="limiter">
+		
+		<div class="container-table100">
+			<h6>*Table is horizontalally scrollable</h6>
+			<div class="wrap-table100">
+				<div class="table100 ver1">
+					<div class="table100-firstcol">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">MSISDN</th>
+								</tr>
+							</thead>
+							<tbody>
+								{% if data %}
+								{% for d in data %}
+								
+								<tr class="row100 body">
+									<td class="cell100 column1">{{d.MSISDN}}</td>
+								</tr>
+
+								{% endfor %}
+								{% endif %}
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="wrap-table100-nextcols js-pscroll">
+						<div class="table100-nextcols">
+							<table>
+								<thead>
+									<tr class="row100 head">
+										<th class="cell100 column2">CALL_ORIG_NUM </th>
+										<th class="cell100 column3">CALL_DIALED_NUM</th>
+										<th class="cell100 column4">IMSI</th>
+										<th class="cell100 column5">IMEI</th>
+										<th class="cell100 column6">CALL_START_DT_TM </th>
+										<th class="cell100 column7">CALL_END_DT_TM</th>
+										<th class="cell100 column8">INBOUND_OUTBOUND_IND</th>
+										<th class="cell100 column8">Call_Network_Volume</th>
+										<th class="cell100 column3">Cell_Lac_Id</th>
+										<th class="cell100 column2">Cell_Site_Id </th>
+										<th class="cell100 column3">LAT</th>
+										<th class="cell100 column2">LONGITUDE</th>
+										<th class="cell100 column3">CALL_TYPE</th>
+										<th class="cell100 column2">Location</th>
+									</tr>
+								</thead>
+								<tbody>
+									{% if data %}
+									{% for row in data %}
+									<tr class="row100 body">
+										<td class="cell100 column2">{{ row.CALL_ORIG_NUM }}</td>
+										<td class="cell100 column3">{{ row.CALL_DIALED_NUM }}</td>
+										<td class="cell100 column4">{{ row.IMSI }}</td>
+										<td class="cell100 column5">{{ row.IMEI }}</td>
+										<td class="cell100 column6">{{ row.CALL_START_DT_TM }}</td>
+										<td class="cell100 column7">{{ row.CALL_END_DT_TM }}</td>
+										<td class="cell100 column8">{{ row.INBOUND_OUTBOUND_IND }}</td>
+
+										<td class="cell100 column2">{{ row.Call_Network_Volume }}</td>
+										<td class="cell100 column3">{{ row.Cell_Lac_Id }}</td>
+										<td class="cell100 column4">{{ row.Cell_Site_Id }}</td>
+										<td class="cell100 column5">{{ row.LAT }}</td>
+										<td class="cell100 column6">{{ row.LONGITUDE }}</td>
+										<td class="cell100 column7">{{ row.CALL_TYPE }}</td>
+										<td class="cell100 column8">{{ row.Location }}</td>
+										
+									</tr>
+									{% endfor %}
+									{% endif %}
+									
+
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--===============================================================================================-->	
+	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/perfect-scrollbar/perfect-scrollbar.min.js' %}"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+
+			$(this).on('ps-x-reach-start', function(){
+				$(this).parent().find('.table100-firstcol').removeClass('shadow-table100-firstcol');
+			});
+
+			$(this).on('ps-scroll-x', function(){
+				$(this).parent().find('.table100-firstcol').addClass('shadow-table100-firstcol');
+			});
+
+		});
+
+		
+		
+		
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
