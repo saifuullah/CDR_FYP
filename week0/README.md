@@ -25,7 +25,7 @@ React components wrap existing native code and interact with native APIs via Rea
 While React Native styling has a similar syntax to CSS, it does not use HTML or CSS.Instead, messages from the JavaScript thread are used to manipulate native views. React Native also allows developers to write native code in languages such as Java or Kotlin for Android, Objective-C or Swift for iOS, and C++/WinRT or C# for Windows 10, which makes it even more flexible. 
 
 <h1> What is Node JS </h1>
-ode.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
+Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
 Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
 A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
 
@@ -52,4 +52,25 @@ A Node.js app runs in a single process, without creating a new thread for every 
 <h6>	Youtube Short videos </h6>
       * https://www.youtube.com/watch?v=EVSMegdj6tY&t=493s <br />
       * https://www.youtube.com/watch?v=6oFuwhIibo4
+      
+      
+      
+<h1>CV Page </h1>
+CV page is purely designed in html and css
+
+<h1>Notable personality profile page</h1>
+This small, 1-page website is developed in html and css. It is linked with CV. I followed a totourial for some help.
+
+<h1>CRUD API in NodeJS</h1>
+CRUD API is developed in NodeJS framework with Express server and MySql database. I have Used POSTMAN (Desktop Version) for testing like
+sending GET,POST,DELETE requests. 
+
+<h1>Form Page</h1>
+In Form page website you can upload CSV files. The files data is then saved in MySql database and all the data is
+then rendered in table. Table is horizentally scrollable because data contains huge number of columns.
+Django is used as a server.
+
+<h1>Graphs</h1>
+I was unable to do this task completly by my own. I was able to draw a bar graph in html,css but unable to make it dynamic. 
+I am working on it.
 
