@@ -58,8 +58,16 @@ A Node.js app runs in a single process, without creating a new thread for every 
 <h1>CV Page </h1>
 CV page is purely designed in html and css
 
+![CV PAGE](https://github.com/saifuullah/CDR_FYP/blob/main/week0/CV/cv.png)
+
 <h1>Notable personality profile page</h1>
 This small, 1-page website is developed in html and css. It is linked with CV. I followed a totourial for some help.
+
+![Profile](https://github.com/saifuullah/CDR_FYP/blob/main/week0/profile/101.png)
+![Profile](https://github.com/saifuullah/CDR_FYP/blob/main/week0/profile/102.png)
+![Profile](https://github.com/saifuullah/CDR_FYP/blob/main/week0/profile/103.png)
+![Profile](https://github.com/saifuullah/CDR_FYP/blob/main/week0/profile/104.png)
+
 
 <h1>CRUD API in NodeJS</h1>
 CRUD API is developed in NodeJS framework with Express server and MySql database. I have Used POSTMAN (Desktop Version) for testing like
