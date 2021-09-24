@@ -118,5 +118,5 @@ SPIDERMONKEY by FireFox </br>
 V8 by Chrome </br>
 
 <h2>UI backend </h2>
-UI backend is used for drawing basic widgets like combo boxes and windows. 
+UI backend is used for drawing basic widgets like combo boxes and windows and so on.
 
