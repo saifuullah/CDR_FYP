@@ -103,15 +103,19 @@ The rendering engine, as the name suggests is responsible for rendering the requ
 engine interprets the HTML, XML documents and images that are formatted using CSS and generates the layout that is displayed in the 
 User Interface. At the end it generates DOM. Different browsers user different rendering engines:
 The rendering engine parses the chunks of HTML document and convert the elements to DOM nodes in a tree called the “content tree” or the “DOM tree”. It also parses both the external CSS files as well in style elements. While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document
--------------------------------------------
-* Internet Explorer: Trident
-* Firefox & other Mozilla browsers: Gecko
-* Chrome & Opera 15+: Blink
-* Chrome (iPhone) & Safari: Webkit
+</br>
+* Internet Explorer: Trident </br>
+* Firefox & other Mozilla browsers: Gecko </br>
+* Chrome & Opera 15+: Blink </br>
+* Chrome (iPhone) & Safari: Webkit </br>
 
 <h2>JavaScript Interpreter</h2>
 It is the component of the browser which interprets and executes the javascript code embedded in a website. The interpreted results are sent to the rendering engine for display. If the script is external then first the resource is fetched from the network. Parser keeps on hold until the script is executed.
-Some browsers also have different JS engines.
+Some browsers also have different JS engines. </br>
+
+CHAKRA is used by MS Edge </br>
+SPIDERMONKEY by FireFox </br>
+V8 by Chrome </br>
 
 <h2>UI backend </h2>
 UI backend is used for drawing basic widgets like combo boxes and windows. 
