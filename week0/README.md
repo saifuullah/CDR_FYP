@@ -88,7 +88,7 @@ Today’s browsers are fully-functional software suites that can interpret and d
 AJAX and other content hosted on Web servers. After adding some extra plugins we can extends the capibilities of web browsers.
 
 <h2>General Structure/Diagram</h2>
-![Skeleton](https://github.com/saifuullah/CDR_FYP/blob/main/week0/br.png)
+![Skeletn](https://github.com/saifuullah/CDR_FYP/blob/main/week0/br.png)
 
 <h2>User interface</h2>
 The user interface is the space where User interacts with the browser. It includes the address bar, back and next buttons,
