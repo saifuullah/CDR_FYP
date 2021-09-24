@@ -52,8 +52,8 @@ app.use(bodyParser.json());
 
 var mysqlConnection = mysql.createConnection({ 
     host: 'localhost',
-    user: 'root',
-    password: '',
+    user: 'debian-sys-maint',
+    password: 'VEtitI5weiBl2LE1',
     database: 'employee'
 });
 
