@@ -82,3 +82,37 @@ Django is used as a server.
 I was unable to do this task completly by my own. I was able to draw a bar graph in html,css but unable to make it dynamic. 
 I am working on it.
 
+<h1>How Browsers work</h1>
+A browser is a group of structured codes which together performs a series of tasks to display a web page on the screen. 
+Today’s browsers are fully-functional software suites that can interpret and display HTML Web pages, applications, JavaScript,
+AJAX and other content hosted on Web servers. After adding some extra plugins we can extends the capibilities of web browsers.
+
+<h2>General Structure/Diagram</h2>
+![Skeleton](https://github.com/saifuullah/CDR_FYP/blob/main/week0/br.png)
+
+<h2>User interface</h2>
+The user interface is the space where User interacts with the browser. It includes the address bar, back and next buttons,
+home button, refresh and stop, bookmark option, etc.
+
+<h2>Browser Engine</h2>
+The browser engine works as a bridge between the User interface and the rendering engine. According to the inputs from various 
+user interfaces, it queries and manipulates the rendering engine.
+
+<h2>Rendering Engine</h2>
+The rendering engine, as the name suggests is responsible for rendering the requested web page on the browser screen. The rendering
+engine interprets the HTML, XML documents and images that are formatted using CSS and generates the layout that is displayed in the 
+User Interface. At the end it generates DOM. Different browsers user different rendering engines:
+The rendering engine parses the chunks of HTML document and convert the elements to DOM nodes in a tree called the “content tree” or the “DOM tree”. It also parses both the external CSS files as well in style elements. While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document
+-------------------------------------------
+* Internet Explorer: Trident
+* Firefox & other Mozilla browsers: Gecko
+* Chrome & Opera 15+: Blink
+* Chrome (iPhone) & Safari: Webkit
+
+<h2>JavaScript Interpreter</h2>
+It is the component of the browser which interprets and executes the javascript code embedded in a website. The interpreted results are sent to the rendering engine for display. If the script is external then first the resource is fetched from the network. Parser keeps on hold until the script is executed.
+Some browsers also have different JS engines.
+
+<h2>UI backend </h2>
+UI backend is used for drawing basic widgets like combo boxes and windows. 
+
